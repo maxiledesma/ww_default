@@ -1,0 +1,29 @@
+// CMS Styles
+@import 'pages/_about_me';
+
+
+// Styles
+& when (@media-common = true) {
+    h1 {
+        &.page-title {
+            font-weight: 800;
+        }
+    }
+}
+
+//
+//  Mobile (styles-m.css)
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+
+}
+
+//
+//    Desktop (style-l.css)
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+
